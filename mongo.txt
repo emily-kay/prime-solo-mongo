@@ -1,1 +1,18 @@
+//Create a collection named orders.
+db.createCollection('orders')
 
+//Insert at least 3 documents that represent an order. IMPORTANT: See section below for fields. Order dates should be: 2017-02-03, 2017-04-04, 2017-01-02
+
+db.orders.insert({orderDate: new Date(2017-02-03), orderTotal: 72.99, lineItems: [{unitPrice: 72.99, quantity: 1, productName: "Fancy Lamp"}]});
+db.orders.insert({orderDate: new Date(2017-04-04), orderTotal: 975.00, lineItems: [{unitPrice: 325.00, quantity: 3, productName: "Nice China"}]});
+db.orders.insert({orderDate: new Date(2017-01-02), orderTotal: 101.00, lineItems: [{unitPrice: 50.50, quantity: 2, productName: "Party Dress"}]});
+
+//Find all orders and make them look pretty.
+
+ db.orders.find().pretty();
+
+//Find all orders with an orderDate that is after 1/31/2017.
+
+
+
+//Change the orderTotal from 2/3/2017 to 63 dollars (you do NOT have to ensure the lineItems' unitPrice * quantity add up to the orderTotal)
